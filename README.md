@@ -36,3 +36,7 @@ yarn deploy
 ```
 
 Builds the project and publishes it to gh pages of this repo
+
+## License
+
+ElixirBench Web is released under the Apache 2.0 License - see the [LICENSE](LICENSE.md) file.

@@ -27,7 +27,6 @@ export const getRepo = gql`
             median
             minimum
             mode
-            runTimes
             sampleSize
             stdDev
             stdDevIps
@@ -68,7 +67,6 @@ export const getBenchmark = gql`
           median
           minimum
           mode
-          runTimes
           sampleSize
           stdDev
           stdDevIps

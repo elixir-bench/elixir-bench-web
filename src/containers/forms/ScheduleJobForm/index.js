@@ -49,7 +49,7 @@ const ScheduleJobForm = ({ classes, error, handleSubmit }) => (
         </Button>
       </Grid>
     </Grid>
-    <Typography type="caption" color="error">{ error }</Typography>
+    <Typography variant="caption" color="error">{ error }</Typography>
   </form>
 )
 

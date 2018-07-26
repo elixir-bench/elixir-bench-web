@@ -35,7 +35,7 @@ const RepoDetails = ({ classes, data, githubUrl, children, onBenchmarkClick, onR
       />
     </Card>
     <PageBlock>
-      <Typography type="title">Benchmarks</Typography>
+      <Typography variant="title">Benchmarks</Typography>
       <BenchmarksList
         benchmarks={ get(data, 'repo.benchmarks') }
         onBenchmarkClick={ onBenchmarkClick }

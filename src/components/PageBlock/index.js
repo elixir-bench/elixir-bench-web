@@ -18,7 +18,7 @@ const PageBlock = ({ classes, title, maxWidth, children }) => (
       )
     }}
   >
-    { title && <Typography type="subheading" paragraph>{ title }</Typography> }
+    { title && <Typography variant="subheading" paragraph>{ title }</Typography> }
     <div>
       { children }
     </div>

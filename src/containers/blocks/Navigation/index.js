@@ -18,14 +18,44 @@ const Navigation = ({ classes, children }) => (
   <GridContainer className={ classes.root }>
     <AppBar position="static">
       <Toolbar>
-        <Grid container justify="space-between" wrap="nowrap" alignItems="center">
+        <Grid container justify="space-between" wrap="nowrap" alignItems="baseline">
           <Grid item>
             <Link to="/" className={ classes.logo }>
-              <Typography type="title" color="inherit">
+              <Typography variant="title" color="inherit">
                 <ElixirBenchLogo className={ classes.logoIcon } />
                 Elixir<b className={ classes.bolder }>Bench</b>
               </Typography>
             </Link>
+          </Grid>
+          <Grid container justify="center">
+            <Grid item >
+              <Link to="/repos" className={ classes.repositories }>
+                <Typography variant="subheading" color="inherit">
+                  Repositories
+                </Typography>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link to="/about" className={ classes.about }>
+                <Typography variant="subheading" color="inherit">
+                  About
+                </Typography>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link to="/contact" className={ classes.contact }>
+                <Typography variant="subheading" color="inherit">
+                  Contact
+                </Typography>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link to="/docs" className={ classes.docs }>
+                <Typography variant="subheading" color="inherit">
+                  Docs
+                </Typography>
+              </Link>
+            </Grid>
           </Grid>
           <Grid item>
             <Grid container wrap="nowrap">

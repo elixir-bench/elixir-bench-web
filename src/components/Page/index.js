@@ -22,7 +22,7 @@ const Page = ({ classes, title, maxWidth, backLink, backTitle, children }) => (
                 <KeyboardArrowLeft />
               </Grid>
               <Grid item>
-                <Typography type="body1">{ backTitle }</Typography>
+                <Typography variant="body1">{ backTitle }</Typography>
               </Grid>
             </Grid>
           </Link>
@@ -32,7 +32,7 @@ const Page = ({ classes, title, maxWidth, backLink, backTitle, children }) => (
         <Grid item>
           <Grid container direction="row" wrap="nowrap" alignItems="center">
             <Grid item>
-              <Typography type="subheading">{ title }</Typography>
+              <Typography variant="subheading">{ title }</Typography>
             </Grid>
           </Grid>
         </Grid>

@@ -39,7 +39,7 @@ const BenchmarkDetailsPage = ({ classes, data, githubUrl, onRestartClick, childr
       />
     </Card>
     <PageBlock>
-      <Typography type="title" paragraph>Logs</Typography>
+      <Typography variant="title" paragraph>Logs</Typography>
       <Logs log={ get(data, 'job.log' )} onRestartClick={ onRestartClick }/>
     </PageBlock>
   </Page>

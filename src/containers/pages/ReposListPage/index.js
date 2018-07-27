@@ -18,22 +18,22 @@ import styles from './styles'
 
 const ReposListPage = ({ classes, data, children, onSubmit }) => (
   <Page>
-    <Typography type="display2" align="center">
+    <Typography variant="display2" align="center">
       What is ElixirBench?
     </Typography>
-    <Typography type="headline" align="center">
+    <Typography variant="headline" align="center">
       Long Running Benchmarks for Elixir Projects
     </Typography>
     <div className={ classes.repos }>
       <Grid container spacing={ 24 }>
         <Grid item xs={ 12 } sm={ 12 } md={ 4 }>
-          <Typography type="headline" align="left" paragraph>
+          <Typography variant="headline" align="left" paragraph>
             Popular repositories
           </Typography>
           <ReposList repos={ data.repos } />
         </Grid>
         <Grid item xs={ 12 } sm={ 12 } md={ 8 }>
-          <Typography type="headline" align="left" paragraph>
+          <Typography variant="headline" align="left" paragraph>
             Last jobs
           </Typography>
           <div className={ classes.lastJobs }>

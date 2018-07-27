@@ -16,7 +16,7 @@ const Component = ({ classes, input, meta, error, children, ...rest }) => (
       error={ !!error }
       margin="none"
     />
-    <Typography color="error" type="caption" className={ classes.error }>
+    <Typography color="error" variant="caption" className={ classes.error }>
       <ErrorMessages error={ error }>
         { children }
       </ErrorMessages>

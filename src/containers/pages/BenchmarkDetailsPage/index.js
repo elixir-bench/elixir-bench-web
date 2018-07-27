@@ -22,7 +22,7 @@ const BenchmarkDetailsPage = ({ classes, data, params, measurements, children })
     backLink={`/repos/${params.owner}/${params.repo}`}
     backTitle="Back to the list of benchmarks"
   >
-    <Typography type="headline">Measurements for <u>{ get(data, 'benchmark.name') }</u></Typography>
+    <Typography variant="headline">Measurements for <u>{ get(data, 'benchmark.name') }</u></Typography>
     <PageBlock title="Iteractions per second">
       <MeasurementsChart measurements={ measurements }>
         <Line dataKey="ips" type="monotone" title="IPS" />

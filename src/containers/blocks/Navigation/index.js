@@ -21,7 +21,7 @@ const Navigation = ({ classes, children }) => (
         <Grid container justify="space-between" wrap="nowrap" alignItems="center">
           <Grid item>
             <Link to="/" className={ classes.logo }>
-              <Typography type="title" color="inherit">
+              <Typography variant="title" color="inherit">
                 <ElixirBenchLogo className={ classes.logoIcon } />
                 Elixir<b className={ classes.bolder }>Bench</b>
               </Typography>

@@ -8,10 +8,10 @@ import Page from 'components/Page'
 
 const NotFoundPage = ({ onClickGoToHomePage }) => (
   <Page>
-    <Typography type="display2" paragraph gutterBottom>
+    <Typography variant="display2" paragraph gutterBottom>
       Page not found ¯\_(ツ)_/¯
     </Typography>
-    <Typography type="body1" paragraph>
+    <Typography variant="body1" paragraph>
       You may have mistyped the address or the page may have moved.
     </Typography>
     <Button color="primary" raised onClick={ onClickGoToHomePage }>Go to home page</Button>

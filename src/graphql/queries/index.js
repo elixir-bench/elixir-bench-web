@@ -86,6 +86,7 @@ export const getJobs = gql`
       commitSha
       completedAt
       claimedAt
+      exitStatus
     }
   }
 `

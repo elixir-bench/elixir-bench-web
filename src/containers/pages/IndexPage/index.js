@@ -50,9 +50,10 @@ const IndexPage = ({ classes, onClickGoToRepositories }) => (
         <Typography align='justify' className={ classes.gridDescription }>
           Easily setup a benchee/config.yml and the benchmark scripts to start collecting
           performance metrics for your project. We currently support benchmarks
-          written with Benchee, a powerful library specially designed to test
-          and measure performance of Elixir code. See the examples of the
-          Ecto library.
+          written with <a href='https://github.com/PragTob/benchee'>Benchee</a>,
+          a powerful library specially designed to test
+          and measure performance of Elixir code. Visit some benchmarks examples of
+          the <a href='https://github.com/elixir-ecto/ecto'>Ecto library</a>.
         </Typography>
       </Grid>
       <Grid item xs={ 12 } sm={ 12 } md={ 4 }>
@@ -72,6 +73,7 @@ const IndexPage = ({ classes, onClickGoToRepositories }) => (
     </Grid>
 
     <Grid align="center">
+      <Button className={ classes.button } size='large' variant='raised' href='https://github.com/elixir-bench/elixir-bench.github.io/wiki'>Want to get started?</Button>
       <Button className={ classes.button } color="primary" size='large' variant='raised' onClick={ onClickGoToRepositories }>View tracked repositories</Button>
     </Grid>
   </Page>

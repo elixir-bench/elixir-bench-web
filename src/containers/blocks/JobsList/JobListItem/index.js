@@ -38,21 +38,37 @@ export default compose(
 )(LastJobItem);
 
 function jobHumanStatus(status) {
-  if(status === 0) { return SUCCESS }
-  if(status === null) { return PENDING }
-  return FAILURE
+  let humanStatus;
+  switch(status) {
+    case 0:
+     humanStatus = SUCCESS
+     break
+
+    case null:
+      humanStatus = PENDING
+      break
+
+    default:
+      humanStatus = FAILURE
+  }
+  return humanStatus
 }
 
 function iconFromStatusCode(statusCode) {
   let status = jobHumanStatus(statusCode)
   let icon = null
 
-  if(status === SUCCESS) {
-    icon = <CheckCircle color="primary"/>
-  } else if(status === PENDING) {
-    icon = <Restore color="disabled"/>
-  }else {
-    icon = <HighlightOff color="error"/>
+  switch(status) {
+    case SUCCESS:
+      icon = <CheckCircle color="primary"/>
+      break
+
+    case PENDING:
+      icon = <Restore color="disabled"/>
+      break
+
+    default:
+      icon = <HighlightOff color="error"/>
   }
 
   return icon

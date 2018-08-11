@@ -18,12 +18,6 @@ import styles from './styles'
 
 const ReposListPage = ({ classes, data, children, onSubmit }) => (
   <Page>
-    <Typography variant="display2" align="center">
-      What is ElixirBench?
-    </Typography>
-    <Typography variant="headline" align="center">
-      Long Running Benchmarks for Elixir Projects
-    </Typography>
     <div className={ classes.repos }>
       <Grid container spacing={ 24 }>
         <Grid item xs={ 12 } sm={ 12 } md={ 4 }>

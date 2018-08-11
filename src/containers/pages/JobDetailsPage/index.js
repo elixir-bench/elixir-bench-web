@@ -22,8 +22,8 @@ import styles from './styles'
 
 const BenchmarkDetailsPage = ({ classes, data, githubUrl, onRestartClick, children }) => (
   <Page
-    backLink="/"
-    backTitle="Back to home page"
+    backLink="/repos"
+    backTitle="Back to the list of repos"
   >
     <Card>
       <CardHeader
